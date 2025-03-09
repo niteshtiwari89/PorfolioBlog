@@ -1,0 +1,10 @@
+.large-first-letter::first-letter {
+  font-size: 2em;
+  margin-left: 4rem;
+  font-weight: bold;
+}
+
+.large-first-para::first-letter {
+  /* font-size: 2em; */
+  margin-left: 4rem;
+}
