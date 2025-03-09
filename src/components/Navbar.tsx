@@ -4,7 +4,7 @@ const Navbar = () => {
 
     // Scroll handler to update the active section based on scroll position
     const handleScroll = () => {
-        const sections = document.querySelectorAll('.section');
+        const sections = document.querySelectorAll('.section') as NodeListOf<HTMLElement>;
         let currentSection = '';
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
