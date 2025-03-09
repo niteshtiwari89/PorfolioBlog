@@ -43,7 +43,7 @@ const LeaderShip = () => {
                         Public Speaking & Industry Engagement
                     </div>
                     <div className="large-first-para mt-4">
-                        I actively engage in global leadership summits, investment forums, and industry think tanks, inspiring entrepreneurs, investors, and executives to embrace technology, sustainability, and innovation as the cornerstones of future business x`success.
+                        I actively engage in global leadership summits, investment forums, and industry think tanks, inspiring entrepreneurs, investors, and executives to embrace technology, sustainability, and innovation as the cornerstones of future business success.
                     </div>
                 </div>
             </div>
