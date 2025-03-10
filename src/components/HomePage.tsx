@@ -9,11 +9,12 @@ import Navbar from './Navbar'
 import InvestmentF from './InvestmentsF'
 import LeaderShip from './LeaderShip'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const HomePage = () => {
     return (
         <>
-            <div className='flex w-1/2  flex-col justify-center bg-gray-200  items-center'>
+            <div className='flex md:w-1/2 w-full  flex-col justify-center bg-gray-200  items-center'>
                 <Header />
                 <Navbar />
                 {/* </div>
@@ -26,6 +27,7 @@ const HomePage = () => {
                 <InvestmentF />
                 <LeaderShip />
                 <Contact />
+                <Footer />
             </div>
         </>
     )

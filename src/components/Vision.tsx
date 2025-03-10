@@ -16,7 +16,7 @@ const Vision = () => {
                     <div className="large-first-para mt-3">
                         <ul className=" list-disc pl-6 mt-4 space-y-2">
                             <li className="flex items-start">
-                                <span className="text-white-400 mr-2">✔</span> Develop groundbreaking AI-driven technology solutions to enhance business efficiency and global connectivity.
+                                <span className="text-green-400 mr-2">✔</span> Develop groundbreaking AI-driven technology solutions to enhance business efficiency and global connectivity.
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-2">✔</span> Revolutionize financial services through AI-powered investment management, digital payments, and alternative asset strategies.

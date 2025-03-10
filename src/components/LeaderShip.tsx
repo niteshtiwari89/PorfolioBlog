@@ -17,7 +17,7 @@ const LeaderShip = () => {
                     <div className="large-first-para mt-3">
                         <ul className=" list-disc pl-6 mt-4 space-y-2">
                             <li className="flex items-start">
-                                <span className="text-white-400 mr-2">✔</span> The Future of AI & Automation – How AI will shape businesses and global economies.
+                                <span className="text-green-400 mr-2">✔</span> The Future of AI & Automation – How AI will shape businesses and global economies.
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-2">✔</span> Decentralized Finance & Wealth Management – The evolution of fintech, blockchain, and tokenized assets.

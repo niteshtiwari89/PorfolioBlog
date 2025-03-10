@@ -16,7 +16,7 @@ const AboutMe = () => {
                         <p>My journey has been shaped by three fundamental principles:</p>
                         <ul className=" list-disc pl-6 mt-4 space-y-2">
                             <li className="flex items-start">
-                                <span className="text-white-400 mr-2">✔</span> Innovation – Harnessing cutting-edge technology to transform industries.
+                                <span className="text-green-400 mr-2">✔</span> Innovation – Harnessing cutting-edge technology to transform industries.
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-2">✔</span> Sustainability – Integrating ESG principles for long-term business resilience.
