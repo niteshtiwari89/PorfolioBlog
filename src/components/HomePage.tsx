@@ -10,6 +10,7 @@ import InvestmentF from './InvestmentsF'
 import LeaderShip from './LeaderShip'
 import Contact from './Contact'
 import Footer from './Footer'
+import { Routes, Route } from 'react-router-dom'
 
 const HomePage = () => {
     return (
@@ -19,14 +20,16 @@ const HomePage = () => {
                 <Navbar />
                 {/* </div>
             <div className='flex w-1/2 flex-col'> */}
-                <Welcome />
-                <AboutMe />
-                <Vision />
-                <Impact />
-                <Businesses />
-                <InvestmentF />
-                <LeaderShip />
-                <Contact />
+                <Routes>
+                    <Route path='/home' element={<Welcome />} />
+                    <Route path='/about' element={<AboutMe />} />
+                    <Route path='/mission' element={<Vision />} />
+                    <Route path='/philanthropy' element={<Impact />} />
+                    <Route path='/business' element={<Businesses />} />
+                    <Route path='/investment' element={<InvestmentF />} />
+                    <Route path='/leadership' element={<LeaderShip />} />
+                    <Route path='/contact' element={<Contact />} />
+                </Routes>
                 <Footer />
             </div>
         </>
