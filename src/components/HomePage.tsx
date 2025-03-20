@@ -21,7 +21,7 @@ const HomePage = () => {
                 {/* </div>
             <div className='flex w-1/2 flex-col'> */}
                 <Routes>
-                    <Route path='/home' element={<Welcome />} />
+                    <Route path='/' element={<Welcome />} />
                     <Route path='/about' element={<AboutMe />} />
                     <Route path='/mission' element={<Vision />} />
                     <Route path='/philanthropy' element={<Impact />} />

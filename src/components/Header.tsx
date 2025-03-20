@@ -26,7 +26,7 @@ const Header = () => {
                         <img src={Logo} alt="profile" width="100%" />
                     </div>
                     <div className="w-5/6 pl-10">
-                        <Link to="/home">
+                        <Link to="/">
                             <div className="text-xl font-bold">Gaurav Polshettiwar</div>
                         </Link>
                     </div>
