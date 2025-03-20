@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";  // Import Link and useLoc
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('');
-    const [isMenuOpen, setIsMenuOpen] = useState(false);  // State to handle the mobile menu
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);  // State to handle the mobile menu
     const location = useLocation();  // Get the current location (path)
 
     // Update the active section when the path changes
@@ -12,10 +12,10 @@ const Navbar = () => {
         setActiveSection(path);  // Set the active section to the current path
     }, [location]);
 
-    // Toggle the mobile menu
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    // // Toggle the mobile menu
+    // const toggleMenu = () => {
+    //     setIsMenuOpen(!isMenuOpen);
+    // };
 
     return (
         <>
