@@ -1,7 +1,7 @@
 const Impact = () => {
     return (
         <>
-            <div className="m-10 section" id="philanthropy">
+            <div className="my-10 pr-5 pl-5 section" id="philanthropy">
                 <div className="font-bold text-xl ">
                     Philanthropy & Impact
                 </div>

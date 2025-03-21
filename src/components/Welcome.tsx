@@ -2,7 +2,7 @@
 const Welcome = () => {
     return (
         <>
-            <div className='flex flex-col w-full pr-5 pl-5 section'>
+            <div className='flex flex-col w-full my-10 pr-5 pl-5 section'>
                 <div className='flex justify-center font-bold mb-5 mt-5'>
                     Welcome to My World of Innovation & Impact
                 </div>

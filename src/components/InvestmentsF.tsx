@@ -2,7 +2,7 @@ const InvestmentF = () => {
     return (
         <>
 
-            <div className="m-10 section" id="investment">
+            <div className="my-10 pr-5 pl-5 section" id="investment">
                 <div className="font-bold text-xl ">
                     Investment Focus
                 </div>
