@@ -1,4 +1,4 @@
-import Logo from '../assets/react.svg'; 
+import Logo from '../assets/profile.jpg'; 
 import { useState, useEffect, useRef } from 'react'; 
 import { Link, useLocation } from 'react-router-dom'; 
 
@@ -40,8 +40,8 @@ const Header = () => {
         <> 
             <div className="flex w-full md:relative sticky top-0 flex-col bg-gray-200 justify-around items-center"> 
                 <div className="w-full flex justify-around items-center shadow-md p-2"> 
-                    <div className="w-1/6"> 
-                        <img src={Logo} alt="profile" width="100%" /> 
+                    <div className="w-1/6 " > 
+                        <img src={Logo} className='rounded-full ' alt="profile" width="100%" /> 
                     </div> 
                     <div className="w-5/6 pl-10"> 
                         <Link to="/"> 
