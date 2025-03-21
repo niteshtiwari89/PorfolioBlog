@@ -6,7 +6,7 @@ const Header = () => {
     const [activeSection, setActiveSection] = useState(''); 
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control menu visibility 
     const location = useLocation(); // Get the current location (path) 
-    const menuRef = useRef(null); // Create a ref for the mobile menu
+    const menuRef = useRef<HTMLDivElement>(null); // Create a ref for the mobile menu
 
     // Update the active section when the path changes 
     useEffect(() => { 
@@ -21,8 +21,8 @@ const Header = () => {
 
     // Close the menu when a click is detected outside of the menu
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+        const handleClickOutside = (event:MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 setIsMenuOpen(false); // Close the menu if click is outside
             }
         };
