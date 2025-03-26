@@ -90,7 +90,7 @@ const Footer = () => {
           reverseOrder={false}
         />
         <div className="px-4">
-          <div className="flex justify-center gap-6 mt-8">
+          <div className="flex justify-center flex-wrap gap-6 mt-8">
             <a href="https://www.linkedin.com/in/gauravpolshettiwar" target="_blank" className="text-gray-400 hover:text-white">
               LinkedIn
             </a>
