@@ -20,27 +20,27 @@ const Navbar = () => {
     return (
         <>
             {/* Desktop Navigation */}
-            <div className='sticky top-0 md:flex hidden bg-gray-800 justify-center items-center flex flex-wrap w-full'>
+            <div className='sticky top-0 md:flex hidden md:bg-white shadow-md bg-gray-800 justify-center items-center flex flex-wrap w-full'>
                 <div className='flex flex-wrap mt-3 mb-3 w-full justify-around items-center space-x-2 pr-10 pl-10'>
-                    <div className={`${activeSection === '/about' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/about' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2 md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/about">About</Link>
                     </div>
-                    <div className={`${activeSection === '/mission' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/mission' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2 md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/mission">Mission</Link>
                     </div>
-                    <div className={`${activeSection === '/philanthropy' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/philanthropy' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2 md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/philanthropy">Philanthropy</Link>
                     </div>
-                    <div className={`${activeSection === '/business' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/business' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2 md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/business">Businesses</Link>
                     </div>
-                    <div className={`${activeSection === '/investment' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/investment' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2 md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/investment">Investments</Link>
                     </div>
-                    <div className={`${activeSection === '/leadership' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/leadership' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2  md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/leadership">Thought Leadership</Link>
                     </div>
-                    <div className={`${activeSection === '/contact' ? 'bg-blue-700' : ''} pr-2 pl-2 text-white mt-2 rounded-md p-2`}>
+                    <div className={`${activeSection === '/contact' ? 'bg-blue-700 md:text-white' : ''} pr-2 pl-2 md:text-black text-white mt-2 rounded-md p-2`}>
                         <Link to="/contact">Contact</Link>
                     </div>
                 </div>

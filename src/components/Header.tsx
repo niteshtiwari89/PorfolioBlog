@@ -38,7 +38,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="flex w-full md:relative sticky top-0 flex-col bg-gray-200 justify-around items-center">
+            <div className="flex w-full md:relative sticky top-0 flex-col md:bg-transparent bg-gray-200 justify-around items-center">
                 <div className="w-full flex justify-around items-center shadow-md p-2">
                     <div className="w-1/6 " >
                         <Link to="/">

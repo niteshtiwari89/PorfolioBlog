@@ -15,7 +15,7 @@ import { Routes, Route } from 'react-router-dom'
 const HomePage = () => {
     return (
         <>
-            <div className='flex md:w-1/2 w-full  flex-col justify-center bg-gray-200  items-center'>
+            <div className='flex md:w-1/2 w-full  flex-col justify-center md:bg-transparent bg-gray-200  items-center'>
                 <Header />
                 <Navbar />
                 {/* </div>

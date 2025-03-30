@@ -7,23 +7,23 @@ const Footer = () => {
 
   return (
     <>
-      <div className="section w-full bg-gray-800 text-white py-8">
+      <div className="section w-full md:bg-transparent bg-gray-800 text-white py-8">
         <Toaster
           position="top-center"
           reverseOrder={false}
         />
         <div className="px-4">
           <div className="flex justify-center flex-wrap gap-6 mt-8">
-            <a href="https://www.linkedin.com/in/gauravpolshettiwar" target="_blank" className="text-gray-400 hover:text-white">
+            <a href="https://www.linkedin.com/in/gauravpolshettiwar" target="_blank" className="md:text-black text-gray-400 hover:text-white">
               LinkedIn
             </a>
-            <a href="https://x.com/speakbygaurav?s=21" target="_blank" className="text-gray-400 hover:text-white">
+            <a href="https://x.com/speakbygaurav?s=21" target="_blank" className="md:text-black text-gray-400 hover:text-white">
               Twitter/X
             </a>
-            <a href="https://www.instagram.com/_thegauravofficial?igsh=eXkyOHZ2d2Y5NG85&utm_source=qr" target="_blank" className="text-gray-400 hover:text-white">
+            <a href="https://www.instagram.com/_thegauravofficial?igsh=eXkyOHZ2d2Y5NG85&utm_source=qr" target="_blank" className="md:text-black text-gray-400 hover:text-white">
               Instagram
             </a>
-            <a href="https://www.youtube.com" target="_blank" className="text-gray-400 hover:text-white">
+            <a href="https://www.youtube.com" target="_blank" className="md:text-black text-gray-400 hover:text-white">
               YouTube
             </a>
             {/* <a href="https://www.youtube.com" target="_blank" className="text-gray-400 flex items-center hover:text-white">
@@ -40,8 +40,8 @@ const Footer = () => {
             </button> */}
           </div>
 
-          <div className="mt-8 text-center text-sm">
-            <p>&copy; 2025 Vertex IT. All Rights Reserved. <a href="#" className="text-blue-400 hover:underline">Privacy Policy</a> | <a href="#" className="text-blue-400 hover:underline">Terms of Use</a></p>
+          <div className="mt-8 text-center md:text-black  text-sm">
+            <p>&copy; 2025 Vertex IT. All Rights Reserved. <a href="#" className="md:text-black text-blue-400 hover:underline">Privacy Policy</a> | <a href="#" className="text-blue-400 hover:underline">Terms of Use</a></p>
           </div>
         </div>
       </div>
