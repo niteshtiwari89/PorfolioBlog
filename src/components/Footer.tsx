@@ -5,82 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    dropdown: "",
-    message: "",
-    access_key: "ff9bca6e-8acb-424c-af55-f06e4074b8ac",
-  });
-
-  const [result, setResult] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    setResult(true)
-    // Define the recipient email based on the dropdown value
-    let recipientEmail = '';
-    if (formData.dropdown === 'philanthropy') {
-      recipientEmail = 'lalatiwari086@gmail.com';  // Philanthropy email
-    } else if (formData.dropdown === 'investor') {
-      recipientEmail = 'tiwarinitesh667@gmail.com'; // Investor email
-    } else if (formData.dropdown === 'business') {
-      recipientEmail = 'tiwarinitesh667@gmail.com'; // Business email
-    } else if (formData.dropdown === 'contact') {
-      recipientEmail = 'tiwarinitesh667@gmail.com'; // Contact email
-    }
-
-    const form = new FormData();
-    form.append('name', formData.name);
-    form.append('email', formData.email);
-    form.append('dropdown', formData.dropdown);
-    form.append('message', formData.message);
-    form.append('access_key', formData.access_key);
-    form.append('recipientEmail', recipientEmail);
-
-    // Send the form data using Web3Forms or any backend service
-    try {
-
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: form,
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        toast.success('Form Submitted Successfully')
-        setFormData({
-          ...formData,
-          name: '',
-          email: '',
-          dropdown: '',
-          message: ''
-        });
-        setResult(false);
-        // event.target.reset();
-      } else {
-        console.log("Error", data);
-        toast.error('Failed to Submit Data')
-      }// Close the modal
-    } catch (error) {
-      toast.error('Error Submit Data')
-      console.log('Error submitting form. Please try again.',error);
-    } finally {
-      setResult(false);
-      setIsModalOpen(false);
-    }
-  };
-
+  
 
   return (
     <>
@@ -106,15 +31,15 @@ const Footer = () => {
             {/* <a href="https://www.youtube.com" target="_blank" className="text-gray-400 flex items-center hover:text-white">
               Contact Us <div className="ml-1"><FaExternalLinkAlt size={12} /></div>
             </a> */}
-            <button
-              onClick={() => setIsModalOpen(true)} // Open modal on click
+            {/* <button
+              // onClick={() => setIsModalOpen(true)} // Open modal on click
               className="text-gray-400 flex items-center hover:text-white"
             >
               Contact Us
               <div className="ml-1">
                 <FaExternalLinkAlt size={12} />
               </div>
-            </button>
+            </button> */}
           </div>
 
           <div className="mt-8 text-center text-sm">
@@ -122,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div className="fixed inset-0 backdrop-blur-xs bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-gray-900 p-8 rounded-lg w-full sm:w-96">
             <div className="flex items-center justify-between mb-4">
@@ -214,7 +139,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-      )}
+      )} */}
     </>
   )
 }
