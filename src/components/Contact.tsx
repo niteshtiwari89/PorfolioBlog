@@ -1,4 +1,3 @@
-import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -12,7 +11,6 @@ const Contact = () => {
     });
 
     const [result, setResult] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({
@@ -74,7 +72,6 @@ const Contact = () => {
             console.log('Error submitting form. Please try again.', error);
         } finally {
             setResult(false);
-            setIsModalOpen(false);
         }
     };
 

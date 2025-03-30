@@ -1,7 +1,5 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
-import toast, { Toaster } from 'react-hot-toast';
+
+import  { Toaster } from 'react-hot-toast';
 
 
 const Footer = () => {
